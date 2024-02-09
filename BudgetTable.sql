@@ -3,7 +3,7 @@ use BBD;
 GO
     --create table
     CREATE TABLE BBDFund(
-        [BBDFundID] [int] IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+        [FundID] [int] IDENTITY(1, 1) PRIMARY KEY NOT NULL,
         [Budget] [money],
         [Date] [date],
     );
