@@ -5,7 +5,7 @@ GO
     CREATE TABLE BBDFund(
         [FundID] [int] IDENTITY(1, 1) PRIMARY KEY NOT NULL,
         [Budget] [money],
-        [Date] [date],
+        [FinancialYearStart] [date],
     );
 
 GO
@@ -21,6 +21,6 @@ GO
 ALTER TABLE
     BBDFund
 ADD
-    CONSTRAINT InitializeBBDFundBudgetDate DEFAULT DATEFROMPARTS (YEAR(GETDATE()), 3, 1) FOR Date;
+    CONSTRAINT InitializeBBDFundBudgetDate DEFAULT DATEFROMPARTS (YEAR(GETDATE()), 3, 1) FOR FinancialYearStart;
 
 GO
