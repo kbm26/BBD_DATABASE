@@ -1,5 +1,5 @@
 CREATE TABLE University(
-    [UniversityID][int] PRIMARY KEY NOT NULL,
+    [UniversityID][int] IDENTITY(1,1) PRIMARY KEY NOT NULL,
     [Name][varchar](120),
     [Budget][money],
     [Location][varchar](120),
