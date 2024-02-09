@@ -10,9 +10,15 @@ GO
     --constraints
     ----add NULL Document
 ALTER TABLE
-    Document ALTER DocumentDescription [varchar](255) NULL;
+    Document
+ALTER COLUMN
+    DocumentDescription [varchar](255) NULL;
 
 GO
     ----add NULL DocumentFile
 ALTER TABLE
-    Document ALTER DocumentFile [varbinary](max) NULL;
+    Document
+ALTER COLUMN
+    DocumentFile [varbinary](max) NULL;
+
+GO
