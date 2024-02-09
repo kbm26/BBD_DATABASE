@@ -7,7 +7,6 @@ CREATE TABLE [dbo].[Students] (
     [BirthDate] [DATE] NOT NULL,
     [Age] [int],
     [Gender] [varchar](120) NOT NULL,
-    [Nationality] [varchar](120) NOT NULL,
     [UniversityID] [int] NOT NULL,
     [RaceID] [int] NOT NULL,
     [ContactID] [int] NOT NULL
