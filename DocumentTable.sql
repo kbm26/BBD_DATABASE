@@ -2,23 +2,9 @@ use BBD;
 
 GO
     CREATE TABLE Document(
-        [DocumentDescription] [varchar](255),
-        [DocumentFile] [varbinary](max),
+        [DocumentID] [int] IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+        [DocumentDescription] [varchar](255) NULL,
+        [DocumentFile] [varbinary](max) NULL,
     );
-
-GO
-    --constraints
-    ----add NULL Document
-ALTER TABLE
-    Document
-ALTER COLUMN
-    DocumentDescription [varchar](255) NULL;
-
-GO
-    ----add NULL DocumentFile
-ALTER TABLE
-    Document
-ALTER COLUMN
-    DocumentFile [varbinary](max) NULL;
 
 GO
