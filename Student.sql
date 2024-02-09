@@ -1,8 +1,8 @@
---Createing Students table
+--Creating Students table
 CREATE TABLE [dbo].[Students]
 (
     [StudentID] [INT] IDENTITY(1,1) PRIMARY KEY NOT NULL,
-    [UniversiryID] [INT] NOT NULL,
+    [UniversityID] [INT] NOT NULL,
     [FirstName] [VARCHAR](120) NOT NULL,
     [LastName] [VARCHAR](120)NOT NULL,
     [IDNumber] [VARCHAR](13) NOT NULL,

@@ -1,4 +1,4 @@
---Createing Race table
+--Creating Race table
 CREATE TABLE [dbo].[Races]
 (
     [RaceID] [INT] IDENTITY(1,1) PRIMARY KEY NOT NULL,
