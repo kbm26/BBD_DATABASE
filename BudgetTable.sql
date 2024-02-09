@@ -1,12 +1,11 @@
 use BBD;
 
-GO
-    --create table
-    CREATE TABLE BBDFund(
-        [FundID] [int] IDENTITY(1, 1) PRIMARY KEY NOT NULL,
-        [Budget] [money],
-        [FinancialYearStart] [date],
-    );
+--create table
+CREATE TABLE BBDFund(
+    [FundID] [int] IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+    [Budget] [money],
+    [FinancialYearStart] [date],
+);
 
 GO
     --constraints
