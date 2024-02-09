@@ -2,7 +2,11 @@ use BBD;
 
 GO
     --create table
-    CREATE TABLE BBDFund([Budget] [money], [Date] [date],);
+    CREATE TABLE BBDFund(
+        [BBDFundID] [int] IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+        [Budget] [money],
+        [Date] [date],
+    );
 
 GO
     --constraints
