@@ -5,6 +5,6 @@ CREATE TABLE [dbo].[StudentApplication] (
 	[DocumentID] [INT] NOT NULL,	
 	[Grade] [INT] NOT NULL,
     [Amount] [MONEY],	
-    [AplicationStatus] [INT] NOT NULL DEFAULT '3',	--1. Aproved 2. Rejected 3. Panding
+    [ApplicationStatus] [INT] NOT NULL DEFAULT '3',	--1. Approved 2. Rejected 3. Pending
 	[Comment] [VARCHAR](255) NULL, --Comment for rejection
 );GO
