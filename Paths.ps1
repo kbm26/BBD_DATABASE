@@ -10,7 +10,8 @@ $outputSqlFile = "Paths.sql"
 
 # Open or create the output SQL file
 $outputFile = [System.IO.File]::Open($outputSqlFile, [System.IO.FileMode]::Create)
-
+$bytes = [System.Text.Encoding]::UTF8.GetBytes("drop database BBD"+"`n"+"create database BBD"+"`n")
+$outputFile.Write($bytes, 0, $bytes.Length)
 # Iterate over each folder path
 foreach ($folderPath in $folderPaths) {
     # Check if the folder exists
