@@ -17,13 +17,13 @@ jobs:
 
     - name: Build Paths
       shell: pwsh
-      run: Paths.ps1
+      run: .\Paths.ps1
 
     - name: Deploy SQL Project
       uses: azure/sql-action@v2.2.1
       with:
           connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-          path: 'Paths.sql'
+          path: '.\Paths.sql'
           action: 'publish'
 
     - name: Logout
