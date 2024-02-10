@@ -3,6 +3,7 @@ use BBD;
 --create table
 CREATE TABLE BBDFund(
     [FundID] [int] IDENTITY(1, 1) PRIMARY KEY NOT NULL,
+    [UniversityID] [int],
     [Budget] [money],
     [FinancialYearStart] [date],
 );
