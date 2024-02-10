@@ -5,8 +5,7 @@ CREATE TABLE [dbo].[Race] (
 );
 
 INSERT INTO
-    [dbo].[Race]
-     ([RaceName])
+    [dbo].[Race] ([RaceName])
 VALUES
     ('Black'),
     ('Coloured'),
