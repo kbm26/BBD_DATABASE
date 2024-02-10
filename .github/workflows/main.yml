@@ -15,6 +15,10 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
+    - name: Run PowerShell script
+      shell: pwsh
+      run: 'Paths.ps1'
+
     - name: Deploy SQL Project
       uses: azure/sql-action@v2.2.1
       with:
