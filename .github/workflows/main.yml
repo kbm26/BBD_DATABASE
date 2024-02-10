@@ -14,12 +14,13 @@ jobs:
     - uses: azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: azure/sql-action@v2.2.1
-      with:
-        connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-        path: ./test.sql
-        action: 'Publish'
 
-    - name: logout
-      run: |
-        az logout
+    - name: Deploy SQL Project
+      uses: azure/sql-action@v2.2.1
+      with:
+          connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
+          path: './test.sql'
+          action: 'publish'
+
+    - name: Logout
+      run: az logout
