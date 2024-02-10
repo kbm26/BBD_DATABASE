@@ -14,7 +14,7 @@ jobs:
     - uses: azure/login@v1
       with:
       creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - name: Deploy SQL changes
+
     - uses: azure/sql-action@v2.2.1
       with:
       connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
