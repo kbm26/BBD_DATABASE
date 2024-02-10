@@ -4,7 +4,7 @@ CREATE TABLE [dbo].[Students] (
     [UserID] [int] NOT NULL,
     [IDNumber] [varchar](13) NOT NULL,
     [BirthDate] [DATE] NOT NULL,
-    [Age] [int],
+    [Age] [smallint],
     [Gender] [varchar](120) NOT NULL,
     [RaceID] [int] NOT NULL,
 );
