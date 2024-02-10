@@ -10,7 +10,3 @@ CREATE TABLE [dbo].[Students] (
 );
 
 GO
-ALTER TABLE
-    Students
-ADD
-    CONSTRAINT ForeignKey
