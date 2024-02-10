@@ -1,7 +1,7 @@
 # Define an array of folder paths
 $folderPaths = @(
-    ".\Constraint",
-    ".\CreateTable"
+    ".\CreateTable",
+    ".\Constraint"
 )
 
 
