@@ -10,17 +10,19 @@ jobs:
     build:
         runs-on: windows-latest
         steps:
+        - name: login
+
          - uses: actions/checkout@v1
          - uses: azure/login@v1
            with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
-         - uses: azure/sql-action@v2
+        - name: Deploy SQL changes
+         - uses: azure/sql-action@v2.2.1
            with:
             connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-            path: ../../test.sql
+            path: ./test.sql
             action: 'Publish'
 
-            # Azure logout 
          - name: logout
            run: |
               az logout
