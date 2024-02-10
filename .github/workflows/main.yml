@@ -7,20 +7,20 @@ on:
         branches: [ functions-feature ]
 
 jobs:
-    build:
-        runs-on: windows-latest
-        steps:
-         - uses: actions/checkout@v1
-         - uses: azure/login@v1
-           with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-        - name: Deploy SQL changes
-         - uses: azure/sql-action@v2.2.1
-           with:
-            connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
-            path: ./test.sql
-            action: 'Publish'
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: azure/login@v1
+      with:
+      creds: ${{ secrets.AZURE_CREDENTIALS }}
+    - name: Deploy SQL changes
+    - uses: azure/sql-action@v2.2.1
+      with:
+      connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
+      path: ./test.sql
+      action: 'Publish'
 
-         - name: logout
-           run: |
-              az logout
+    - name: logout
+      run: |
+        az logout
