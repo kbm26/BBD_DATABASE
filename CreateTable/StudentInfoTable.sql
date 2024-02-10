@@ -8,9 +8,3 @@ CREATE TABLE [dbo].[Students] (
     [UserID] [int] NOT NULL,
     [RaceID] [int] NOT NULL,
 );
-
-GO
-ALTER TABLE
-    Students
-ADD
-    CONSTRAINT ForeignKey
