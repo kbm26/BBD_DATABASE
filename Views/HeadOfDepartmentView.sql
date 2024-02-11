@@ -1,2 +1,2 @@
-CREATE VIEW HeadOfDepartmentView
-AS
+-- CREATE VIEW HeadOfDepartmentView
+-- AS
