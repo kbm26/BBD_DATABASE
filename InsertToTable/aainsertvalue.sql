@@ -239,10 +239,7 @@ VALUES
     ('Refilwe', 'Mthethwa', 94),
     ('Thando', 'Molefe', 95),
     ('Mpho', 'Zwane', 96),
-    ('Sibusiso', 'Mthembu', 97),
-    ('Nokuthula', 'Mkhize', 98),
-    ('Thabang', 'Zulu', 99),
-    ('Puleng', 'Mokoena', 100);
+    ('Sibusiso', 'Mthembu', 97);
 
 GO
 -- Generate 90 records for StudentApplication with random data and rejection comments
