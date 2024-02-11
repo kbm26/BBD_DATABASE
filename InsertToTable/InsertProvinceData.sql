@@ -12,3 +12,5 @@ VALUES
     ('Free State'),
     ('Eastern Cape'),
     ('Northern Cape');
+
+GO;

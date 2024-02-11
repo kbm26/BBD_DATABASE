@@ -101,3 +101,5 @@ VALUES
     ('Nokuthula', 'Mkhize', 98),
     ('Thabang', 'Zulu', 99),
     ('Puleng', 'Mokoena', 100);
+
+GO;

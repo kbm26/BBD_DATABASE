@@ -4,3 +4,5 @@ VALUES
     ('Black'),
     ('Coloured'),
     ('Indian');
+
+GO;

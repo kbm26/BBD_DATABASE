@@ -105,3 +105,5 @@ VALUES
     ('everly.nguyen@gmail.com', '0845678901'),
     ('lewis.makwela@yahoo.com', '0765432109'),
     ('lily.martin@hotmail.com', '0834567890');
+
+GO;

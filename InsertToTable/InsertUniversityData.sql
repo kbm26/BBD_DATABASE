@@ -23,3 +23,5 @@ VALUES
     ('Vaal University of Technology', 2),
     ('University of Venda', 1),
     ('Central University of Technology', 7);
+
+GO;

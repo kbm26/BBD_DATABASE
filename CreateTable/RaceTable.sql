@@ -4,3 +4,5 @@ CREATE TABLE [dbo].[Race] (
     [RaceName] [varchar](10) NOT NULL
 );
 
+GO;
+

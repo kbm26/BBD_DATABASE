@@ -4,3 +4,5 @@ CREATE TABLE [dbo].[User](
     [LastName] [varchar](120),
     [ContactID] [int]
 );
+
+GO;

@@ -4,3 +4,5 @@ VALUES
     ('Approved'),
     ('Rejected'),
     ('Pending');
+
+GO;

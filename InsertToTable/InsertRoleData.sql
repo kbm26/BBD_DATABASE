@@ -4,3 +4,5 @@ VALUES
     ('BBD Admin'),
     ('Head of Department'),
     ('Student');
+
+GO;

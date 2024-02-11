@@ -3,3 +3,5 @@ CREATE TABLE [dbo].[University](
     [Name] [varchar](120),
     [ProvinceID] [int]
 );
+
+GO;

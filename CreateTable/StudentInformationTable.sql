@@ -8,3 +8,5 @@ CREATE TABLE [dbo].[StudentInformation] (
     [UserID] [int] NOT NULL,
     [RaceID] [int] NOT NULL,
 );
+
+GO;
