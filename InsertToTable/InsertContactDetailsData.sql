@@ -25,7 +25,7 @@ VALUES
     ('olivia.ngcobo@hotmail.com', '0790123456'),
     ('jacob.moloi@gmail.com', '0665432109'),
     (
-        'catherine.van der merwe@yahoo.com',
+        'catherine.vandermerwe@yahoo.com',
         '0712345678'
     ),
     ('mohammed.khan@gmail.com', '0823456789'),
@@ -42,7 +42,7 @@ VALUES
     ('nicole.williams@yahoo.com', '0823456789'),
     ('isaac.ngcobo@hotmail.com', '0645678901'),
     ('amelia.moloi@gmail.com', '0734567890'),
-    ('gabriel.van der merwe@yahoo.com', '0812345678'),
+    ('gabriel.vandermerwe@yahoo.com', '0812345678'),
     ('lily.khan@hotmail.com', '0723456789'),
     ('henry.qwabe@gmail.com', '0845678901'),
     ('zara.smith@yahoo.com', '0765432109'),
@@ -56,7 +56,7 @@ VALUES
     ('mia.williams@yahoo.com', '0812345678'),
     ('jordan.ngcobo@hotmail.com', '0723456789'),
     ('zoe.moloi@gmail.com', '0845678901'),
-    ('ethan.van der merwe@yahoo.com', '0765432109'),
+    ('ethan.vandermerwe@yahoo.com', '0765432109'),
     ('hannah.khan@gmail.com', '0834567890'),
     ('jack.qwabe@yahoo.com', '0790123456'),
     ('ava.smith@gmail.com', '0665432109'),
