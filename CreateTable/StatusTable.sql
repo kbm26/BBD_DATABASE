@@ -3,10 +3,3 @@ CREATE TABLE [dbo].[Status](
 	[StatusType] [varchar](120),
 )
 GO
-INSERT INTO
-    [dbo].[Status]
-     ([StatusType])
-VALUES
-    ('Approved'),
-    ('Rejected'),
-    ('Pending');
