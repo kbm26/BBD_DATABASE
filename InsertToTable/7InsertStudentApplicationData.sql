@@ -26,12 +26,7 @@ VALUES
     (94, 200000, 2, 'Exceeded income limit'),
     (79, 180000, 3, ''),
     (88, 200000, 1, ''),
-    (
-        73,
-        170000,
-        2,
-        'Previous application pending'
-    ),
+    (73,170000,2,'Previous application pending'),
     (91, 195000, 3, ''),
     (77, 180000, 1, ''),
     (84, 190000, 2, 'Program not recognized'),
@@ -40,12 +35,7 @@ VALUES
     (81, 160000, 2, 'Incomplete transcripts'),
     (74, 185000, 3, ''),
     (89, 200000, 1, ''),
-    (
-        86,
-        170000,
-        2,
-        'Not enrolled in eligible program'
-    ),
+    (86,170000, 2, 'Not enrolled in eligible program'),
     (79, 190000, 3, ''),
     (93, 200000, 1, ''),
     (75, 165000, 2, 'Low academic performance'),
@@ -72,12 +62,7 @@ VALUES
     (76, 170000, 2, 'Incomplete documents'),
     (97, 190000, 3, ''),
     (81, 200000, 1, ''),
-    (
-        72,
-        160000,
-        2,
-        'Low academic performance'
-    ),
+    (72,160000,2,'Low academic performance'),
     (86, 175000, 3, ''),
     (79, 200000, 1, ''),
     (94, 165000, 2, 'Low financial need'),
@@ -89,12 +74,7 @@ VALUES
     (76, 180000, 2, 'Incomplete transcripts'),
     (81, 195000, 3, ''),
     (90, 200000, 1, ''),
-    (
-        68,
-        170000,
-        2,
-        'Not enrolled in eligible program'
-    ),
+    (68,170000,2,'Not enrolled in eligible program' ),
     (83, 190000, 3, ''),
     (94, 200000, 1, ''),
     (76, 160000, 2, 'Low academic performance'),
