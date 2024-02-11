@@ -3,7 +3,7 @@ INSERT INTO
     [dbo].[StudentApplication] (
         [Grade],
         [Amount],
-        [Status],
+        [StatusID],
         [Comment]
     )
 VALUES
