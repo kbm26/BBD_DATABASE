@@ -2,9 +2,9 @@ name: SQL for GitHub Actions
 
 on:
     push:
-        branches: [ functions-feature ]
+        branches: [ main ]
     pull_request:
-        branches: [ functions-feature ]
+        branches: [ main ]
 
 jobs:
   build:
