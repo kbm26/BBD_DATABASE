@@ -8,7 +8,6 @@ GO
         [Amount] [money] NOT NULL,
         [StatusID] [int],
         -- The person applying for fund 
-        [UserID] [int],
         [Comment] [varchar](255)
     );
 
