@@ -1,5 +1,5 @@
 ALTER TABLE
-    [dbo].[StudentApplication]
+    [dbo].[UniversityStudent]
 ADD
     CONSTRAINT ForeignKeyUniversity FOREIGN KEY (UniversityID) REFERENCES [dbo].[UniversityID](UniversityID),
-    CONSTRAINT ForeignKeyStatus FOREIGN KEY (StatusID) REFERENCES  [dbo].[Status](StatusID)
+    CONSTRAINT ForeignKeyStudent FOREIGN KEY (StudentID) REFERENCES [dbo].[Students](StudentID)
