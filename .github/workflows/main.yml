@@ -1,0 +1,30 @@
+name: SQL for GitHub Actions
+
+on:
+    push:
+        branches: [ functions-feature ]
+    pull_request:
+        branches: [ functions-feature ]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Build Paths
+      shell: pwsh
+      run: .\PathGenerator.ps1
+
+    - name: Deploy SQL Project
+      uses: azure/sql-action@v2.2.1
+      with:
+          connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
+          path: '.\Paths.sql'
+          action: 'publish'
+
+    - name: Logout
+      run: az logout
