@@ -1,6 +1,6 @@
--- Generate 100 records for ContactDetails with South African contact information
+-- 100 records for ContactDetails with South African contact information
 INSERT INTO
-    [dbo].[ContactDetails] ([Email], [Phone])
+    [dbo].[ContactDetails] ([Email], [PhoneNumber])
 VALUES
     ('john.doe@gmail.com', '0712345678'),
     ('jane.smith@yahoo.com', '0823456789'),
