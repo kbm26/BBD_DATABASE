@@ -781,7 +781,7 @@ VALUES
         'Rejected - Ineligible for funding'
     ),
     (16, '2022-12-01', 1600000, 3, 99, ''),
-    (10, '2023-01-01', 700000, 1, 100, 'Approved'),
+    (10, '2023-01-01', 700000, 1, 67, 'Approved'),
     (
         1,
         '2023-03-01',
@@ -811,7 +811,7 @@ VALUES
         'Rejected - Duplicate application'
     ),
     (15, '2014-09-01', 1600000, 3, 98, ''),
-    (19, '2014-12-01', 300000, 1, 99, 'Approved'),
+    (19, '2014-12-01', 300000, 1, 12, 'Approved'),
     (
         9,
         '2008-01-01',
@@ -841,7 +841,7 @@ VALUES
         'Rejected - Low academic performance'
     ),
     (16, '2016-06-01', 1700000, 3, 97, ''),
-    (3, '2016-09-01', 1200000, 1, 98, 'Approved'),
+    (3, '2016-09-01', 1200000, 1, 12, 'Approved'),
     (
         12,
         '2011-12-01',
@@ -880,8 +880,8 @@ VALUES
         43,
         'Rejected - Ineligible for funding'
     ),
-    (9, '2018-12-01', 1100000, 3, 99, ''),
-    (2, '2019-01-01', 1200000, 1, 100, 'Approved');
+    (9, '2018-12-01', 1100000, 3, 47, ''),
+    (2, '2019-01-01', 1200000, 1, 53, 'Approved');
 
 GO
 -- Generate 40 records for UniversityFundApplication with random data
