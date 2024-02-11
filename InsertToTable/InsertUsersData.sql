@@ -1,6 +1,12 @@
 INSERT INTO
     [dbo].[User] ([FirstName], [LastName], [ContactID])
 VALUES
+    ('John', 'Doe', 1),
+    ('Jane', 'Smith', 2),
+    ('Michael', 'Johnson', 3),
+    ('Lerato', 'Molefe', 4),
+    ('Alice', 'Brown', 5),
+    ('David', 'Lee', 6),
     ('Thabo', 'Mkhize', 7),
     ('Nomvula', 'Zulu', 8),
     ('Sipho', 'Mbele', 9),
