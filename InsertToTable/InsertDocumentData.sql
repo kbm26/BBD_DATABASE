@@ -1,6 +1,6 @@
 -- Generate 40 records for Document with random data
 INSERT INTO
-    Document ([Transcript], [IDFile])
+    Document ([Transcript], [IdentityDocument])
 VALUES
     (
         0x5468726565206973206120676f6f64207472616e7363726970742e,
