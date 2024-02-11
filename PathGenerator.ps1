@@ -24,7 +24,7 @@ foreach ($folderPath in $folderPaths) {
             $sqlStatement = ":r $($file.FullName)"
             
             # Convert the SQL statement to bytes and write it to the output SQL file
-            $bytes = [System.Text.Encoding]::UTF8.GetBytes($sqlStatement + "`n"+"GO;"+"`n")
+            $bytes = [System.Text.Encoding]::UTF8.GetBytes($sqlStatement + "`n")
             $outputFile.Write($bytes, 0, $bytes.Length)
         }
     } else {
