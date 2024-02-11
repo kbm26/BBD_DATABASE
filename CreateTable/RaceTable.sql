@@ -4,9 +4,3 @@ CREATE TABLE [dbo].[Race] (
     [RaceName] [varchar](10) NOT NULL
 );
 
-INSERT INTO
-    [dbo].[Race] ([RaceName])
-VALUES
-    ('Black'),
-    ('Coloured'),
-    ('Indian');
