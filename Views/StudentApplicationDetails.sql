@@ -28,7 +28,7 @@ AS
         JOIN
         [User] U ON S.UserID = U.UserID
         JOIN
-        UniversityID UI ON SA.UniversityID = UI.UniversityID
+        University UI ON SA.UniversityID = UI.UniversityID
         JOIN
         Province P ON UI.ProvinceID = P.ProvinceID
         JOIN
