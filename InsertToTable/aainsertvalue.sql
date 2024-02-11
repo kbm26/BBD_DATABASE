@@ -930,7 +930,6 @@ VALUES
         '2006-04-01',
         1600000,
         2,
-        96,
         'Rejected - Low academic performance'
     ),
     (16, '2016-06-01', 1700000, 3, ''),
