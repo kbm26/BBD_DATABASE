@@ -3,4 +3,4 @@ CREATE TABLE [dbo].[StudentInformationStudentApplication](
     [ApplicationID] [int] NOT NULL
 );
 
-GO;
+GO

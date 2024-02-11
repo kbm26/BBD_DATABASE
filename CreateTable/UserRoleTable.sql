@@ -3,4 +3,4 @@ CREATE TABLE [dbo].[UserRole](
     [RoleID] [int] NOT NULL
 );
 
-GO;
+GO

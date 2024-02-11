@@ -3,4 +3,4 @@ CREATE TABLE [dbo].[UniversityUser](
     [UserID] [int] NOT NULL,
 );
 
-GO;
+GO

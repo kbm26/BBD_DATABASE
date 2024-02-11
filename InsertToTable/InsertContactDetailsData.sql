@@ -106,4 +106,4 @@ VALUES
     ('lewis.makwela@yahoo.com', '0765432109'),
     ('lily.martin@hotmail.com', '0834567890');
 
-GO;
+GO

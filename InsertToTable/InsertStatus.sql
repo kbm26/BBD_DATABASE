@@ -5,4 +5,4 @@ VALUES
     ('Rejected'),
     ('Pending');
 
-GO;
+GO

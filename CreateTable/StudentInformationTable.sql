@@ -9,4 +9,4 @@ CREATE TABLE [dbo].[StudentInformation] (
     [RaceID] [int] NOT NULL,
 );
 
-GO;
+GO

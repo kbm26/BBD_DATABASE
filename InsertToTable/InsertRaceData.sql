@@ -5,4 +5,4 @@ VALUES
     ('Coloured'),
     ('Indian');
 
-GO;
+GO
