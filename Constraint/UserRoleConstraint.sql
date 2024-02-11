@@ -1,5 +1,5 @@
 ALTER TABLE
     [dbo].[UserRole]
 ADD
-    CONSTRAINT FK_UserID FOREIGN KEY (UserID) REFERENCES [dbo].[User](UserID),
-    CONSTRAINT FK_RoleID FOREIGN KEY (RoleID) REFERENCES [dbo].[Role](RoleID)
+    CONSTRAINT ForeignKeyUser FOREIGN KEY (UserID) REFERENCES [dbo].[User](UserID),
+    CONSTRAINT ForeignKeyRole FOREIGN KEY (RoleID) REFERENCES [dbo].[Role](RoleID)
