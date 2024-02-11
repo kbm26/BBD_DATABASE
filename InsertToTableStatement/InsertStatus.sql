@@ -1,5 +1,5 @@
 INSERT INTO
-    [dbo].[Status] ([StatusType])
+    [dbo].[Status] ([Type])
 VALUES
     ('Approved'),
     ('Rejected'),
