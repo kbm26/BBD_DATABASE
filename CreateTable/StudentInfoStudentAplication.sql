@@ -1,4 +1,4 @@
-CREATE TABLE [dbo][StudentInfoStudentApplication](
-    [StudentID] [int] NOT NULL,
-    [ApplicationID] [int] NOT NULL
+CREATE TABLE [dbo].[StudentInfoStudentApplication](
+    [ApplicationID] [int] NOT NULL,    
+    [StudentID] [int] NOT NULL
 );
