@@ -4,7 +4,7 @@ CREATE TABLE [dbo].[StudentApplication] (
     [Grade] [int] NOT NULL,
     [Amount] [money],
     --1. Approved 2. Rejected 3. Pending
-    [Status] [int] NOT NULL DEFAULT 3,
+    [StatusID] [int] NOT NULL DEFAULT 3,
     --Comment for rejection   
     [Comment] [varchar](255) NULL
 );
