@@ -71,7 +71,7 @@ VALUES
     ('liam.ngcobo@hotmail.com', '0834567890'),
     ('nina.moloi@yahoo.com', '0790123456'),
     (
-        'sebastian.van der merwe@gmail.com',
+        'sebastian.vandermerwe@gmail.com',
         '0665432109'
     ),
     ('chloe.khan@yahoo.com', '0712345678'),
@@ -87,7 +87,7 @@ VALUES
     ('grace.williams@hotmail.com', '0665432109'),
     ('logan.ngcobo@gmail.com', '0712345678'),
     ('hazel.moloi@yahoo.com', '0823456789'),
-    ('zachary.van der merwe@gmail.com', '0645678901'),
+    ('zachary.vandermerwe@gmail.com', '0645678901'),
     ('aubrey.khan@yahoo.com', '0734567890'),
     ('violet.qwabe@hotmail.com', '0812345678'),
     ('jaxon.smith@gmail.com', '0723456789'),
