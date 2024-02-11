@@ -24,10 +24,7 @@ VALUES
     ('daniel.williams@yahoo.com', '0834567890'),
     ('olivia.ngcobo@hotmail.com', '0790123456'),
     ('jacob.moloi@gmail.com', '0665432109'),
-    (
-        'catherine.vandermerwe@yahoo.com',
-        '0712345678'
-    ),
+    ('catherine.vandermerwe@yahoo.com','0712345678'),
     ('mohammed.khan@gmail.com', '0823456789'),
     ('zintle.qwabe@hotmail.com', '0645678901'),
     ('luke.smith@gmail.com', '0734567890'),
@@ -70,10 +67,7 @@ VALUES
     ('amelia.williams@gmail.com', '0765432109'),
     ('liam.ngcobo@hotmail.com', '0834567890'),
     ('nina.moloi@yahoo.com', '0790123456'),
-    (
-        'sebastian.vandermerwe@gmail.com',
-        '0665432109'
-    ),
+    ('sebastian.vandermerwe@gmail.com', '0665432109'),
     ('chloe.khan@yahoo.com', '0712345678'),
     ('jacob.qwabe@hotmail.com', '0823456789'),
     ('emily.smith@gmail.com', '0645678901'),
