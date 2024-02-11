@@ -13,4 +13,4 @@ VALUES
     ('Eastern Cape'),
     ('Northern Cape');
 
-GO;
+GO

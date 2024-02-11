@@ -24,4 +24,4 @@ VALUES
     ('University of Venda', 1),
     ('Central University of Technology', 7);
 
-GO;
+GO

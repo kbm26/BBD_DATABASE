@@ -5,4 +5,4 @@ VALUES
     ('Head of Department'),
     ('Student');
 
-GO;
+GO

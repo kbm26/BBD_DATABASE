@@ -102,4 +102,4 @@ VALUES
     ('Thabang', 'Zulu', 99),
     ('Puleng', 'Mokoena', 100);
 
-GO;
+GO

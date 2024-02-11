@@ -1,6 +1,6 @@
 ALTER TABLE
     Document
 ADD
-    CONSTRAINT ForeignKeyStudentApplication FOREIGN KEY (ApplicationID) REFERENCES [dbo].[StudentApplication](ApplicationID)
+    CONSTRAINT ForeignKeyStudentApplication FOREIGN KEY (ApplicationID) REFERENCES [dbo].[StudentApplication](ApplicationID);
 
-GO;
+GO

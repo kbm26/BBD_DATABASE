@@ -4,4 +4,4 @@ CREATE TABLE [dbo].[University](
     [ProvinceID] [int]
 );
 
-GO;
+GO

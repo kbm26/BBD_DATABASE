@@ -118,4 +118,4 @@ VALUES
     (92, 165000, 2, 'Exceeded income limit'),
     (79, 190000, 3, '');
 
-GO;
+GO

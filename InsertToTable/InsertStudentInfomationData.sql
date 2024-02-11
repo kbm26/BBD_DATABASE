@@ -368,4 +368,4 @@ VALUES
         1
     );
 
-GO;
+GO

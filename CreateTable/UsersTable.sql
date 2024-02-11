@@ -5,4 +5,4 @@ CREATE TABLE [dbo].[User](
     [ContactID] [int]
 );
 
-GO;
+GO
