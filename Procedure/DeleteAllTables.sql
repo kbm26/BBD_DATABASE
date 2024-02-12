@@ -10,10 +10,10 @@ BEGIN
     ALTER TABLE [dbo].[StudentInformationStudentApplication] DROP CONSTRAINT [ForeignKey_ApplicationID];
     ALTER TABLE [dbo].[Document] DROP CONSTRAINT [ForeignKeyStudentApplication];
     ALTER TABLE [dbo].[User] DROP CONSTRAINT [ForeignKeyContact];
-    ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyUser];
-    ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyRole];
-    ALTER TABLE [dbo].[UniversityFundApplication] DROP CONSTRAINT [ForeignKeyStatusID];
-    ALTER TABLE [dbo].[UniversityFundApplication] DROP CONSTRAINT [ForeignKeyUniversityID];
+	ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyUser];
+	ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyRole];
+	ALTER TABLE [dbo].[UniversityFundApplication] DROP CONSTRAINT [ForeignKeyStatusID]
+	ALTER TABLE [dbo].[UniversityFundApplication] DROP CONSTRAINT [ForeignKeyUniversityID]
 
     DROP TABLE [dbo].[BBDFund];
     DROP TABLE [dbo].[ContactDetails];
