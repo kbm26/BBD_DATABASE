@@ -31,6 +31,7 @@ BEGIN
     DROP TABLE [dbo].[Race];
     DROP TABLE [dbo].[Role];
     DROP TABLE [dbo].[Status];
-END
+END;
+GO
 
 
