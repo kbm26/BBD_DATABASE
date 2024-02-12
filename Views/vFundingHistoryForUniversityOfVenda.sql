@@ -1,3 +1,7 @@
-CREATE VIEW vFundingHistoryForUniversityOfVenda
-AS
-SELECT * FROM [dbo].[udfFindUniversityBudgetInfo]('University of Venda')
+CREATE VIEW vFundingHistoryForUniversityOfVenda AS
+SELECT
+    *
+FROM
+    [dbo].[udfFindUniversityBudgetInfo]('University of Venda');
+
+GO

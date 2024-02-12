@@ -1,3 +1,7 @@
-CREATE VIEW vFundingHistoryForMangosuthuUniversityOfTechnology
-AS
-SELECT * FROM [dbo].[udfFindUniversityBudgetInfo]('Mangosuthu University of Technology')
+CREATE VIEW vFundingHistoryForMangosuthuUniversityOfTechnology AS
+SELECT
+    *
+FROM
+    [dbo].[udfFindUniversityBudgetInfo]('Mangosuthu University of Technology');
+
+GO
