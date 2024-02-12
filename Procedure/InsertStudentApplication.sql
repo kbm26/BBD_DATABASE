@@ -16,3 +16,4 @@ BEGIN
     INSERT INTO dbo.StudentInformationStudentApplication (StudentID, ApplicationID)
     VALUES (@StudentID, @ApplicationID);
 END;
+GO
