@@ -13,3 +13,14 @@ This BBD Management project is a SQL database hosted on Microsoft Azure SQL Data
 ![ERD Diagram](./ERD%20Diagram.png)
 [Link to ERD](https://lucid.app/lucidchart/ced2b68d-e00a-4887-aedc-9fa2825edc92/edit?invitationId=inv_6e82edb7-94ef-49f1-ae3e-bd83d905b4fc&page=0_0#)
 
+Team members:
+    Kyle Moodley
+    Vuyo Mathe
+    Alfred Malope
+    Sibusiso Mdlovu
+
+Continuous integration and continuous deployment:
+    GitHub
+
+
+
