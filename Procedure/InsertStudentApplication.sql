@@ -6,8 +6,6 @@ CREATE PROCEDURE InsertStudentApplication
 )
 AS
 BEGIN
-    SET NOCOUNT ON;
-
     DECLARE @ApplicationID int;
 
     INSERT INTO dbo.StudentApplication (Grade, Amount)
