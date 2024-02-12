@@ -1,7 +1,5 @@
-
 INSERT INTO
-    [dbo].[Province]
-     ([Name])
+    [dbo].[Province] ([Name])
 VALUES
     ('Limpopo'),
     ('Gauteng'),
@@ -63,7 +61,7 @@ VALUES
     ('daniel.williams@yahoo.com', '0834567890'),
     ('olivia.ngcobo@hotmail.com', '0790123456'),
     ('jacob.moloi@gmail.com', '0665432109'),
-    ('catherine.vandermerwe@yahoo.com','0712345678'),
+    ('catherine.vandermerwe@yahoo.com', '0712345678'),
     ('mohammed.khan@gmail.com', '0823456789'),
     ('zintle.qwabe@hotmail.com', '0645678901'),
     ('luke.smith@gmail.com', '0734567890'),
@@ -242,7 +240,7 @@ VALUES
     ('Sibusiso', 'Mthembu', 97);
 
 GO
--- Generate 90 records for StudentApplication with random data and rejection comments
+    -- Generate 90 records for StudentApplication with random data and rejection comments
 INSERT INTO
     [dbo].[StudentApplication] (
         [Grade],
@@ -270,7 +268,7 @@ VALUES
     (94, 200000, 2, 'Exceeded income limit'),
     (79, 180000, 3, ''),
     (88, 200000, 1, ''),
-    (73,170000,2,'Previous application pending'),
+    (73, 170000, 2, 'Previous application pending'),
     (91, 195000, 3, ''),
     (77, 180000, 1, ''),
     (84, 190000, 2, 'Program not recognized'),
@@ -279,7 +277,7 @@ VALUES
     (81, 160000, 2, 'Incomplete transcripts'),
     (74, 185000, 3, ''),
     (89, 200000, 1, ''),
-    (86,170000, 2, 'Not enrolled in eligible program'),
+    (86, 170000, 2, 'Not enrolled in eligible program'),
     (79, 190000, 3, ''),
     (93, 200000, 1, ''),
     (75, 165000, 2, 'Low academic performance'),
@@ -306,7 +304,7 @@ VALUES
     (76, 170000, 2, 'Incomplete documents'),
     (97, 190000, 3, ''),
     (81, 200000, 1, ''),
-    (72,160000,2,'Low academic performance'),
+    (72, 160000, 2, 'Low academic performance'),
     (86, 175000, 3, ''),
     (79, 200000, 1, ''),
     (94, 165000, 2, 'Low financial need'),
@@ -318,7 +316,7 @@ VALUES
     (76, 180000, 2, 'Incomplete transcripts'),
     (81, 195000, 3, ''),
     (90, 200000, 1, ''),
-    (68,170000,2,'Not enrolled in eligible program' ),
+    (68, 170000, 2, 'Not enrolled in eligible program'),
     (83, 190000, 3, ''),
     (94, 200000, 1, ''),
     (76, 160000, 2, 'Low academic performance'),
@@ -741,179 +739,78 @@ VALUES
     ('Central University of Technology', 7);
 
 GO
+    -- Generate 40 records for UniversityFundApplication with random data
 INSERT INTO
     UniversityFundApplication (
         [UniversityID],
         [FundingYear],
         [Amount],
         [StatusID],
-        [UserID],
         [Comment]
     )
 VALUES
-    (3, '2021-03-01', 1200000, 1, 91, 'Approved'),
+    (3, '2021-03-01', 1200000, 1, 'Approved'),
     (
         7,
         '2021-05-01',
         800000,
         2,
-        92,
         'Rejected - Insufficient documentation'
     ),
-    (12, '2021-08-01', 1500000, 3, 93, ''),
-    (5, '2021-11-01', 1000000, 1, 94, 'Approved'),
+    (12, '2021-08-01', 1500000, 3, ''),
+    (5, '2021-11-01', 1000000, 1, 'Approved'),
     (
         18,
         '2022-02-01',
         1800000,
         2,
-        95,
         'Rejected - Funding not available'
     ),
-    (9, '2022-04-01', 900000, 3, 96, ''),
-    (14, '2022-06-01', 1100000, 1, 97, 'Approved'),
+    (9, '2022-04-01', 900000, 3, ''),
+    (14, '2022-06-01', 1100000, 1, 'Approved'),
     (
         2,
         '2022-09-01',
         1400000,
         2,
-        45,
         'Rejected - Ineligible for funding'
     ),
-    (16, '2022-12-01', 1600000, 3, 99, ''),
-    (10, '2023-01-01', 700000, 1, 67, 'Approved'),
+    (16, '2022-12-01', 1600000, 3, ''),
+    (10, '2023-01-01', 700000, 1, 'Approved'),
     (
         1,
         '2023-03-01',
         1200000,
         2,
-        91,
         'Rejected - Incomplete application'
     ),
-    (8, '2023-05-01', 1300000, 3, 92, ''),
-    (13, '2023-08-01', 1900000, 1, 93, 'Approved'),
+    (8, '2023-05-01', 1300000, 3, ''),
+    (13, '2023-08-01', 1900000, 1, 'Approved'),
     (
         6,
         '2023-11-01',
         500000,
         2,
-        94,
         'Rejected - Low academic performance'
     ),
-    (17, '2006-02-01', 1000000, 3, 95, ''),
-    (11, '2006-04-01', 800000, 1, 96, 'Approved'),
+    (17, '2006-02-01', 1000000, 3, ''),
+    (11, '2006-04-01', 800000, 1, 'Approved'),
     (
         4,
         '2021-06-01',
         1500000,
         2,
-        97,
         'Rejected - Duplicate application'
     ),
-    (15, '2014-09-01', 1600000, 3, 98, ''),
-    (19, '2014-12-01', 300000, 1, 12, 'Approved'),
+    (15, '2014-09-01', 1600000, 3, ''),
+    (19, '2014-12-01', 300000, 1, 'Approved'),
     (
         9,
         '2008-01-01',
         1100000,
         2,
-        44,
         'Rejected - Insufficient documentation'
     ),
-    (7, '2005-03-01', 1200000, 3, 91, ''),
-    (2, '2025-05-01', 700000, 1, 92, 'Approved'),
-    (
-        14,
-        '2005-08-01',
-        1300000,
-        2,
-        93,
-        'Rejected - Ineligible for funding'
-    ),
-    (5, '2005-11-01', 800000, 3, 94, ''),
-    (18, '2026-02-01', 1400000, 1, 95, 'Approved'),
-    (
-        11,
-        '2006-04-01',
-        1600000,
-        2,
-        96,
-        'Rejected - Low academic performance'
-    ),
-    (16, '2016-06-01', 1700000, 3, 97, ''),
-    (3, '2016-09-01', 1200000, 1, 12, 'Approved'),
-    (
-        12,
-        '2011-12-01',
-        1800000,
-        2,
-        79,
-        'Rejected - Incomplete application'
-    ),
-    (8, '2017-01-01', 900000, 3, 100, ''),
-    (13, '2017-03-01', 1100000, 1, 91, 'Approved'),
-    (
-        6,
-        '2020-05-01',
-        1900000,
-        2,
-        92,
-        'Rejected - Duplicate application'
-    ),
-    (17, '2017-08-01', 1000000, 3, 93, ''),
-    (10, '2007-11-01', 1200000, 1, 94, 'Approved'),
-    (
-        1,
-        '2020-02-01',
-        1400000,
-        2,
-        95,
-        'Rejected - Insufficient documentation'
-    ),
-    (15, '2018-04-01', 1500000, 3, 96, ''),
-    (4, '2002-06-01', 800000, 1, 97, 'Approved'),
-    (
-        19,
-        '2018-09-01',
-        900000,
-        2,
-        43,
-        'Rejected - Ineligible for funding'
-    ),
-    (9, '2018-12-01', 1100000, 3, 47, ''),
-    (2, '2019-01-01', 1200000, 1, 53, 'Approved');
-
-GO
--- Generate 40 records for UniversityFundApplication with random data
-INSERT INTO
-    UniversityFundApplication (
-        [UniversityID],
-        [FundingYear],
-        [Amount],
-        [StatusID],
-        [Comment]
-    )
-VALUES
-    (3, '2021-03-01', 1200000, 1,  'Approved'),
-    ( 7,'2021-05-01', 800000,2,'Rejected - Insufficient documentation'),
-    (12, '2021-08-01', 1500000, 3, ''),
-    (5, '2021-11-01', 1000000, 1, 'Approved'),
-    ( 18,'2022-02-01',1800000,2,'Rejected - Funding not available'),
-    (9, '2022-04-01', 900000, 3, ''),
-    (14, '2022-06-01', 1100000, 1, 'Approved'),
-    (2,'2022-09-01',1400000,2,'Rejected - Ineligible for funding'),
-    (16, '2022-12-01', 1600000, 3, ''),
-    (10, '2023-01-01', 700000, 1, 'Approved'),
-    ( 1, '2023-03-01', 1200000, 2,'Rejected - Incomplete application'),
-    (8, '2023-05-01', 1300000, 3,  ''),
-    (13, '2023-08-01', 1900000, 1, 'Approved'),
-    ( 6, '2023-11-01', 500000, 2, 'Rejected - Low academic performance'),
-    (17, '2006-02-01', 1000000, 3, ''),
-    (11, '2006-04-01', 800000, 1,  'Approved'),
-    ( 4, '2021-06-01', 1500000, 2, 'Rejected - Duplicate application'),
-    (15, '2014-09-01', 1600000, 3, ''),
-    (19, '2014-12-01', 300000, 1,  'Approved'),
-    ( 9,'2008-01-01', 1100000,  2,  'Rejected - Insufficient documentation'),
     (7, '2005-03-01', 1200000, 3, ''),
     (2, '2025-05-01', 700000, 1, 'Approved'),
     (
@@ -923,8 +820,8 @@ VALUES
         2,
         'Rejected - Ineligible for funding'
     ),
-    (5, '2005-11-01', 800000, 3,  ''),
-    (18, '2026-02-01', 1400000, 1,  'Approved'),
+    (5, '2005-11-01', 800000, 3, ''),
+    (18, '2026-02-01', 1400000, 1, 'Approved'),
     (
         11,
         '2006-04-01',
@@ -933,23 +830,46 @@ VALUES
         'Rejected - Low academic performance'
     ),
     (16, '2016-06-01', 1700000, 3, ''),
-    (3, '2016-09-01', 1200000, 1,  'Approved'),
-    (12,'2011-12-01', 1800000, 2, 'Rejected - Incomplete application' ),
-    (8, '2017-01-01', 900000, 3,  ''),
+    (3, '2016-09-01', 1200000, 1, 'Approved'),
+    (
+        12,
+        '2011-12-01',
+        1800000,
+        2,
+        'Rejected - Incomplete application'
+    ),
+    (8, '2017-01-01', 900000, 3, ''),
     (13, '2017-03-01', 1100000, 1, 'Approved'),
-    (6,'2020-05-01', 1900000, 2, 'Rejected - Duplicate application' ),
-    (17, '2017-08-01', 1000000, 3,  ''),
+    (
+        6,
+        '2020-05-01',
+        1900000,
+        2,
+        'Rejected - Duplicate application'
+    ),
+    (17, '2017-08-01', 1000000, 3, ''),
     (10, '2007-11-01', 1200000, 1, 'Approved'),
-    ( 1, '2020-02-01', 1400000, 2,
-        'Rejected - Insufficient documentation'),
+    (
+        1,
+        '2020-02-01',
+        1400000,
+        2,
+        'Rejected - Insufficient documentation'
+    ),
     (15, '2018-04-01', 1500000, 3, ''),
     (4, '2002-06-01', 800000, 1, 'Approved'),
-    ( 19,'2018-09-01',900000,2,'Rejected - Ineligible for funding'),
+    (
+        19,
+        '2018-09-01',
+        900000,
+        2,
+        'Rejected - Ineligible for funding'
+    ),
     (9, '2018-12-01', 1100000, 3, ''),
     (2, '2019-01-01', 1200000, 1, 'Approved');
 
 GO
--- Generate 40 records for Document with random data
+    -- Generate 40 records for Document with random data
 INSERT INTO
     Document (
         [Transcript],
@@ -1156,8 +1076,7 @@ VALUES
         0x5375626d697373696f6e2042616368656c6f722073206465677265652e,
         0x4964656e74697479446f63756d656e742e,
         40
-    )
-;
+    );
 
 GO
 INSERT INTO
@@ -1260,8 +1179,9 @@ VALUES
     (0, '1984-03-01', 19);
 
 GO
--- Insert values into UserRole table
-INSERT INTO [dbo].[UserRole] ([UserID], [RoleID])
+    -- Insert values into UserRole table
+INSERT INTO
+    [dbo].[UserRole] ([UserID], [RoleID])
 VALUES
     (1, 1),
     (2, 2),
@@ -1303,9 +1223,11 @@ VALUES
     (38, 2),
     (39, 3),
     (40, 1);
+
 GO
--- Insert values into UniversityStudentInformation table
-INSERT INTO [dbo].[UniversityStudentInformation] ([UniversityID], [StudentID])
+    -- Insert values into UniversityStudentInformation table
+INSERT INTO
+    [dbo].[UniversityStudentInformation] ([UniversityID], [StudentID])
 VALUES
     (1, 1),
     (2, 2),
@@ -1328,8 +1250,8 @@ VALUES
     (19, 19),
     (20, 20);
 
-
-INSERT INTO [dbo].[StudentInformationStudentApplication] ([StudentID], [ApplicationID])
+INSERT INTO
+    [dbo].[StudentInformationStudentApplication] ([StudentID], [ApplicationID])
 VALUES
     (1, 1),
     (2, 2),
@@ -1353,3 +1275,6 @@ VALUES
     (20, 20),
     (21, 21),
     (22, 22);
+
+GO
+   
