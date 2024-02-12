@@ -1,7 +1,7 @@
 CREATE PROCEDURE DeleteAllTables
 AS
 BEGIN
-    ALTER TABLE [dbo].[StudentApplication] DROP CONSTRAINT [ForeignKeyStatus];
+     ALTER TABLE [dbo].[StudentApplication] DROP CONSTRAINT [ForeignKeyStatus];
     ALTER TABLE [dbo].[StudentInformation] DROP CONSTRAINT [ForeignKeyRaceID];
     ALTER TABLE [dbo].[University] DROP CONSTRAINT [ForeignKeyProvince];
     ALTER TABLE [dbo].[UniversityStudentInformation] DROP CONSTRAINT [ForeignKeyUniversity];
@@ -10,8 +10,10 @@ BEGIN
     ALTER TABLE [dbo].[StudentInformationStudentApplication] DROP CONSTRAINT [ForeignKey_ApplicationID];
     ALTER TABLE [dbo].[Document] DROP CONSTRAINT [ForeignKeyStudentApplication];
     ALTER TABLE [dbo].[User] DROP CONSTRAINT [ForeignKeyContact];
-	ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyUser];
-	ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyRole];
+    ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyUser];
+    ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyRole];
+    ALTER TABLE [dbo].[UniversityFundApplication] DROP CONSTRAINT [ForeignKeyStatusID];
+    ALTER TABLE [dbo].[UniversityFundApplication] DROP CONSTRAINT [ForeignKeyUniversityID];
 
     DROP TABLE [dbo].[BBDFund];
     DROP TABLE [dbo].[ContactDetails];
