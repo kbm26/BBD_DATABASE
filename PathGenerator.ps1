@@ -9,7 +9,7 @@ $outputSqlFile = "Paths.sql"
 
 $outputFile = [System.IO.File]::Open($outputSqlFile, [System.IO.FileMode]::Create)
 
-$bytes = [System.Text.Encoding]::UTF8.GetBytes("EXEC dbo.DeleteAllTables")
+$bytes = [System.Text.Encoding]::UTF8.GetBytes("EXEC dbo.DeleteAllTables"+"`n")
 $outputFile.Write($bytes, 0, $bytes.Length)
 
 foreach ($folderPath in $folderPaths) {
