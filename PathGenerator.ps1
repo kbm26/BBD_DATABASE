@@ -9,6 +9,9 @@ $outputSqlFile = "Paths.sql"
 
 $outputFile = [System.IO.File]::Open($outputSqlFile, [System.IO.FileMode]::Create)
 
+$bytes = [System.Text.Encoding]::UTF8.GetBytes("EXEC dbo.DeleteAllTables")
+$outputFile.Write($bytes, 0, $bytes.Length)
+
 foreach ($folderPath in $folderPaths) {
     if (Test-Path $folderPath) {
         $files = Get-ChildItem -Path $folderPath -File
@@ -23,8 +26,7 @@ foreach ($folderPath in $folderPaths) {
         Write-Output "Folder not found: $folderPath"
     }
 }
-$bytes = [System.Text.Encoding]::UTF8.GetBytes("EXEC dbo.DeleteAllTables")
-$outputFile.Write($bytes, 0, $bytes.Length)
+
 $outputFile.Close()
 
 Write-Output "File paths written to $outputSqlFile"
