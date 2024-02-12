@@ -2,8 +2,8 @@ CREATE VIEW StudentApplicationDetails
 AS
     SELECT
         SA.ApplicationID,
-        U.FirstName AS UserFirstName,
-        U.LastName AS UserLastName,
+        U.FirstName,
+        U.LastName,
         S.IDNumber,
         S.BirthDate,
         S.Age,
@@ -17,18 +17,20 @@ AS
         D.IdentityDocument,
         SA.Grade,
         SA.Amount,
-        ST.StatusType AS ApplicationStatus,
+        ST.Type AS ApplicationStatus,
         SA.Comment AS ApplicationComment
     FROM
         StudentApplication SA
         JOIN
-        StudentInfoStudentApplication SIS ON SA.ApplicationID = SIS.ApplicationID
+        StudentInformationStudentApplication SIS ON SA.ApplicationID = SIS.ApplicationID
         JOIN
-        Students S ON SIS.StudentID = S.StudentID
+        StudentInformation S ON SIS.StudentID = S.StudentID
         JOIN
         [User] U ON S.UserID = U.UserID
+		JOIN
+		UniversityStudentInformation USI ON S.StudentID = USI.StudentID
         JOIN
-        University UI ON SA.UniversityID = UI.UniversityID
+        University UI ON USI.UniversityID = UI.UniversityID
         JOIN
         Province P ON UI.ProvinceID = P.ProvinceID
         JOIN

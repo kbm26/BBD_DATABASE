@@ -1,7 +1,5 @@
-
 INSERT INTO
-    [dbo].[Province]
-     ([Name])
+    [dbo].[Province] ([Name])
 VALUES
     ('Limpopo'),
     ('Gauteng'),
