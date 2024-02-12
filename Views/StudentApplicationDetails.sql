@@ -2,8 +2,8 @@ CREATE VIEW StudentApplicationDetails
 AS
     SELECT
         SA.ApplicationID,
-        U.FirstName AS UserFirstName,
-        U.LastName AS UserLastName,
+        U.FirstName,
+        U.LastName,
         S.IDNumber,
         S.BirthDate,
         S.Age,
