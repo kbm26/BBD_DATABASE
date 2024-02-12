@@ -41,3 +41,5 @@ AS
         ContactDetails CD ON U.ContactID = CD.ContactID
         JOIN
         [Status] ST ON SA.StatusID = ST.StatusID;
+
+GO

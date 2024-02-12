@@ -14,4 +14,5 @@ AS
         JOIN
         University U ON UFA.UniversityID = U.UniversityID
         JOIN
-        Province P ON U.ProvinceID = P.ProvinceID
+        Province P ON U.ProvinceID = P.ProvinceID;
+GO
