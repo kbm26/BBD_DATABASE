@@ -1,2 +1,0 @@
--- CREATE VIEW HeadOfDepartmentView
--- AS
