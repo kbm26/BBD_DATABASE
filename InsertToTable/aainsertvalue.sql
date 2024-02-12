@@ -81,21 +81,7 @@ VALUES
     (9, 3),
     (10, 2);
 GO
--- Generate 5 records for StudentApplication with random data and rejection comments
-INSERT INTO
-    [dbo].[StudentApplication] (
-        [Grade],
-        [Amount],
-        [StatusID],
-        [Comment]
-    )
-VALUES
-    (75, 150000, 2, ''),
-    (42, 180000, 3, 'Low GPA'),
-    (90, 200000, 1, ''),
-    (78, 160000, 1, '');
-    
-   
+
 
 GO
 INSERT INTO
@@ -126,6 +112,22 @@ VALUES
     ('9005011234046', '1990-05-01', 'Male', 7, 3);
    
 
+GO
+-- Generate 5 records for StudentApplication with random data and rejection comments
+INSERT INTO
+    [dbo].[StudentApplication] (
+        [Grade],
+        [Amount],
+        [StatusID],
+        [Comment],
+        [StudentID]
+    )
+VALUES
+    (75, 150000, 2, '',1),
+    (42, 180000, 3, 'Low GPA',2),
+    (90, 200000, 1, '',3),
+    (78, 160000, 1, '',4);
+    
 GO
 INSERT INTO
     [dbo].[University] ([Name], [ProvinceID])
