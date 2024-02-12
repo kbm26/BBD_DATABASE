@@ -10,6 +10,9 @@ BEGIN
     ALTER TABLE [dbo].[StudentInformationStudentApplication] DROP CONSTRAINT [ForeignKey_ApplicationID];
     ALTER TABLE [dbo].[Document] DROP CONSTRAINT [ForeignKeyStudentApplication];
     ALTER TABLE [dbo].[User] DROP CONSTRAINT [ForeignKeyContact];
+	ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyUser];
+	ALTER TABLE [dbo].[UserRole] DROP CONSTRAINT [ForeignKeyRole];
+
     DROP TABLE [dbo].[BBDFund];
     DROP TABLE [dbo].[ContactDetails];
     DROP TABLE [dbo].[Document];
@@ -28,4 +31,4 @@ BEGIN
     DROP TABLE [dbo].[UserRole];
 END
 
-EXEC DeleteAllTables;
+
