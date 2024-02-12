@@ -19,11 +19,3 @@ RETURN
 	LEFT JOIN dbo.UniversityStudentInformation AS UniStudentInfo
 		ON unifund.UniversityID = UniStudentInfo.UniversityID 
     WHERE uni.Name = @UniversityName
-	 GROUP BY uni.UniversityID,
-	 uni.Name,
-	 uni.ProvinceID,
-	 unifund.ApplicationID,
-	 unifund.FundingYear,
-	 unifund.Amount,
-	 unifund.StatusID,
-	 unifund.Comment;
