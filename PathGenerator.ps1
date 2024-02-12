@@ -1,11 +1,7 @@
 $folderPaths = @(
     ".\CreateTable",
     ".\Constraint",
-    ".\InsertToTable",
-    ".\Procedure",
-    ".\Functions",
-    ".\Views"
-  
+    ".\InsertToTable"
 )
 
 
@@ -27,7 +23,8 @@ foreach ($folderPath in $folderPaths) {
         Write-Output "Folder not found: $folderPath"
     }
 }
-
+$bytes = [System.Text.Encoding]::UTF8.GetBytes("EXEC dbo.DeleteAllTables")
+$outputFile.Write($bytes, 0, $bytes.Length)
 $outputFile.Close()
 
 Write-Output "File paths written to $outputSqlFile"
